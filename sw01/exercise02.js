@@ -6,24 +6,27 @@ myStack.push = function (o) {
 };
 
 /*---------Object Hierarchies---------------*/
-var Shape = {
-    xPos: 0,
-    yPos: 0
-
-};
-var Rectangle(xPos, yPos, xLength, yLength)= {
-    xPos: 0,
-    yPos: 0
-    xLength: 0
-};
 var Circle = {
     xPos: 0,
     yPos: 0,
     radius: 0
 };
 
-Shape.draw = function () {
-    console.log("Shape at Position (" + Shape.xPos + "," + Shape.yPos + ")");
+function Shape(xPos, yPos) {
+    this.draw = function () {
+        console.log("Shape at Position (" + Shape.xPos + "," + Shape.yPos + ")");
+    }
+}
 
-};
+function Rectangle(xPos, yPos, xLenght, yLength) {
+    Shape.call(this)
+    this.xPos = xPos;
+    this.yPos = yPos;
 
+}
+
+Rectangle.draw();
+
+function Circle(xPos, yPos, radius) {
+    console.log("Circle at Position (" + Shape.xPos + "," + Shape.yPos + ") with radius " + Circle.radius);
+}vi .
