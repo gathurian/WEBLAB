@@ -85,9 +85,19 @@ var object2 = new Object("This is an Object");
 console.log(object2);
 console.log("");
 
-function Interval(a,b){
-
+function Interval(smallerNumber, biggerNumber) {
+    this.smallNumber = smallerNumber;
+    this.bigNumber = biggerNumber;
+    this.isInside = function (number) {
+        return smallerNumber < number < biggerNumber;
+    };
 };
+
+var myInterval = new Interval(4,10);
+console.log(myInterval.isInside(6));
+
+
+
 
 /*---------------Functions---------------*/
 function Mult(a, b){
