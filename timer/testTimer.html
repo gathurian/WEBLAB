@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestTimer</title>
+</head>
+<body>
+<script type="text/javascript">
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var month = now.getMonth();
+    var year = now.getFullYear();
+
+    var date = new Date(year, month, day, hours, minutes, seconds);
+    var dateYear = date.getFullYear();
+    var dateMonth = date.getMonth();
+    var dateDay = date.getDay();
+    var dateHour = date.getHours();
+    var dateMinute = date.getMinutes();
+    var dateSecond = date.getSeconds();
+
+    function GetClock(){
+
+    }
+
+
+    window.onload=function(){
+        GetClock();
+        setInterval(GetClock,1000);
+    }
+</script>
+<div id="now"></div>
+<div id="time"></div>
+</body>
+</html>

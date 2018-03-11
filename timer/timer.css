@@ -1,0 +1,37 @@
+#setMinutes{
+    float: left;
+    background-color: blue;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+#timer {
+    float: left;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: red;
+    margin-top: 20px;
+}
+
+#setSeconds{
+    float: left;
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+#controls{
+    float: bottom;
+    background-color: yellow;
+    width: 190px;
+    height:30px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+button{
+    width: 60px;
+    height: 30px;
+}
