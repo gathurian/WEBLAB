@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <title>Timer</title>
     <link rel="stylesheet" type="text/css" href="timer.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/>
     <script src="timer.js"></script>
+    <style type="text/css">
+        * {
+            font-family: '8BITWONDERNominal';
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
-    <div id="setMinutes">
-        <button onclick="increaseMinutes()">up</button>
-        <button onclick="decreaseMinutes()">down</button>
-    </div>
-    <div id="timer">
+    <div id="clock">
+        <div id="setMinutes">
+            <button onclick="increaseMinutes()">up</button>
+            <button onclick="decreaseMinutes()">down</button>
+        </div>
+        <div id="timer">
 
-    </div>
-    <div id="setSeconds">
-        <button onclick="increaseSeconds()">up</button>
-        <button onclick="decreaseSecondsButton()">down</button>
+        </div>
+        <div id="setSeconds">
+            <button onclick="increaseSeconds()">up</button>
+            <button onclick="decreaseSecondsButton()">down</button>
+        </div>
     </div>
     <div id="controls">
         <button onclick="startTimer()">start</button>
