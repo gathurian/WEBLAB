@@ -77,7 +77,7 @@ const object = {
 
 listProperties(object);
 
-var date = new Date(2018,02,21,18,07);
+var date = new Date(2018,2,21,18,7);
 console.log(date);
 console.log("");
 
