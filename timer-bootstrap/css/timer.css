@@ -1,0 +1,30 @@
+.bg-image{
+    background-image: url("../img/clock-blurred.jpg");
+    background-size: contain;
+}
+
+.button{
+    width: 60pt;
+    margin: 5pt;
+    background: rgb(108,117,125);
+}
+
+.buttonControls{
+    width: 80pt;
+}
+
+.controlSeconds{
+    margin-top: -55pt;
+    float: right;
+}
+
+.controlContainers{
+    margin-top: 10pt;
+    margin-left: calc(50% - 103px);
+}
+
+#timer{
+    font-size: xx-large;
+    margin-top: -45pt;
+    text-align: center;
+}

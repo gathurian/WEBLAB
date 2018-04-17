@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Timer - mit Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="icon"
+          type="image/ico"
+          href="img/timer.png">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!--Custom CSS for timer-->
+    <link href="css/timer.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Javascript for timer-->
+    <script src="js/timer.js"></script>
+
+</head>
+
+<body id="page-top">
+
+
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-uppercase">
+                    <strong>Your Favorite easy to use Timer</strong>
+                </h1>
+                <hr>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5">Have you ever vowed to start your homework in exactly 10 minutes,
+                    and the next time you looked on your clock, it was suddenly 1 hour later? <br>
+                    Not anymore</p>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#timer">Set your timer</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="text-white bg-image">
+    <a class="container text-center">
+        <h2 class="mb-4">TIMER</h2>
+        <div class="container timercontainer">
+            <div class="buttonControls controlMinutes">
+                <a class="btn btn-light btn-sm sr-button button" onclick="increaseMinutes()">Up</a>
+                <a class="button btn btn-light btn-sm sr-button" onclick="decreaseMinutes()">Down</a>
+            </div>
+            <div class="container clockcontainer">
+                <div id="timer"></div>
+                <div class="buttonControls controlSeconds">
+                    <a class="btn btn-light btn-sm sr-button button" onclick="increaseSeconds()">Up</a>
+                    <a class="button btn btn-light btn-sm sr-button" onclick="decreaseSeconds()">Down</a>
+                </div>
+                <div class="btn-group controlContainers" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" onclick="startTimer()">Start</button>
+                    <button type="button" class="btn btn-secondary" onclick="pauseTimer()">Stop</button>
+                    <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </a>
+</section>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/creative.min.js"></script>
+
+</body>
+
+</html>

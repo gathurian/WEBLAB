@@ -1,2 +1,5 @@
 .idea/
 .directory
+
+
+**/node_modules/*
