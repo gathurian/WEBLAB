@@ -46,7 +46,7 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h1 class="text-uppercase">
-                    <strong>Your Favorite easy to use Timer</strong>
+                    <strong>Your favourite, easy to use Timer</strong>
                 </h1>
                 <hr>
             </div>
@@ -65,21 +65,27 @@
     <a class="container text-center">
         <h2 class="mb-4">TIMER</h2>
         <div class="container timercontainer">
-            <div class="buttonControls controlMinutes">
-                <a class="btn btn-light btn-sm sr-button button" onclick="increaseMinutes()">Up</a>
-                <a class="button btn btn-light btn-sm sr-button" onclick="decreaseMinutes()">Down</a>
-            </div>
-            <div class="container clockcontainer">
-                <div id="timer"></div>
-                <div class="buttonControls controlSeconds">
-                    <a class="btn btn-light btn-sm sr-button button" onclick="increaseSeconds()">Up</a>
-                    <a class="button btn btn-light btn-sm sr-button" onclick="decreaseSeconds()">Down</a>
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <div class="buttonControls controlMinutes">
+                        <a class="btn btn-light btn-sm sr-button button" onclick="increaseMinutes()">Up</a>
+                        <a class="button btn btn-light btn-sm sr-button" onclick="decreaseMinutes()">Down</a>
+                    </div>
+                    <div class="container clockcontainer">
+                        <div id="timer"></div>
+                        <div class="buttonControls controlSeconds">
+                            <a class="btn btn-light btn-sm sr-button button" onclick="increaseSeconds()">Up</a>
+                            <a class="button btn btn-light btn-sm sr-button" onclick="decreaseSeconds()">Down</a>
+                        </div>
+                        <div class="btn-group controlContainers" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary" onclick="startTimer()">Start</button>
+                            <button type="button" class="btn btn-secondary" onclick="pauseTimer()">Stop</button>
+                            <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-group controlContainers" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" onclick="startTimer()">Start</button>
-                    <button type="button" class="btn btn-secondary" onclick="pauseTimer()">Stop</button>
-                    <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
-                </div>
+                <div class="col-sm"></div>
             </div>
         </div>
     </a>
